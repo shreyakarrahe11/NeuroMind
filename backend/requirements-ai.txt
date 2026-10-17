@@ -1,0 +1,19 @@
+# Install only the packages required by the artifact exported from Colab.
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+onnxruntime>=1.19
+shap>=0.46
+chromadb>=0.5
+pypdf>=5.0
+google-genai>=1.0
+
+# Phase 1 final speech encoder and Wav2Vec2 feature pipeline.
+torch>=2.4
+transformers>=4.45
+soundfile>=0.12
+
+# Large framework packages are intentionally opt-in. Uncomment the one used
+# when training/exporting the model:
+# tensorflow>=2.17
+# opensmile>=2.5

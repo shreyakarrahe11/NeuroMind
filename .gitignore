@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/.venv/
+backend/*.db
+storage/*
+!storage/.gitkeep
+backend/storage/*
+!backend/storage/.gitkeep
+chroma_db/
+# Keep trained weights and the offline Wav2Vec2 backbone out of GitHub.
+# Only the empty directory marker and non-secret template remain tracked.
+ai_models/*
+!ai_models/.gitkeep
+!ai_models/MANIFEST_TEMPLATE.json
+
+# Local deployment secrets
+.env.production
+.env.production.compose

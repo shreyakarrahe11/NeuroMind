@@ -1,0 +1,30 @@
+{
+  "name": "neuromind-multimodal",
+  "version": "1.0.0",
+  "framework": "sklearn",
+  "task": "binary_multimodal_screening",
+  "speech_embedding_dim": 1,
+  "speech_artifact_sha256": "REPLACE_WITH_EXACT_SPEECH_ARTIFACT_SHA256",
+  "input_features": [
+    "speech_embedding_0",
+    "memory_score",
+    "immediate_recall",
+    "delayed_recall",
+    "recognition_score",
+    "attention_score",
+    "digit_span",
+    "reaction_time_ms",
+    "sustained_attention_score",
+    "sleep_hours",
+    "sleep_quality",
+    "exercise_hours_week",
+    "smoking",
+    "alcohol_use",
+    "medical_history",
+    "lifestyle_score"
+  ],
+  "class_labels": ["Non-Dementia", "Dementia"],
+  "output_type": "probabilities",
+  "artifact_sha256": "REPLACE_WITH_EXACT_64_CHARACTER_SHA256",
+  "training_notes": "Template only. Replace speech_embedding_dim and input_features with every actual speech dimension followed by the exact 15 website features. Never invent a class, feature, metric or checksum."
+}

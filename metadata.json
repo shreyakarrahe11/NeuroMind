@@ -1,0 +1,10 @@
+{
+  "name": "NeuroMind - Multimodal Cognitive Screening",
+  "description": "Multimodal Cognitive Screening & Research Platform integrating speech, memory, attention, and lifestyle signals into a structured clinical review system.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+:root {
+  --neuro-dark: #0F0E47;
+  --neuro-navy: #272757;
+  --neuro-slate: #505081;
+  --neuro-periwinkle: #8686AC;
+  --neuro-gold: #F59E0B;
+  --neuro-maroon: #800000;
+}
+
+@layer utilities {
+  .bg-neuro-dark { background-color: #0F0E47; }
+  .bg-neuro-navy { background-color: #272757; }
+  .bg-neuro-slate { background-color: #505081; }
+  .bg-neuro-periwinkle { background-color: #8686AC; }
+  .bg-neuro-gold { background-color: #F59E0B; }
+  .bg-neuro-maroon { background-color: #800000; }
+  .text-neuro-dark { color: #0F0E47; }
+  .text-neuro-navy { color: #272757; }
+  .text-neuro-slate { color: #505081; }
+  .text-neuro-periwinkle { color: #8686AC; }
+  .text-neuro-gold { color: #F59E0B; }
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.875rem;
+    box-shadow: 0 4px 6px -1px rgba(15, 14, 71, 0.04), 0 2px 4px -1px rgba(15, 14, 71, 0.02);
+  }
+  .pill {
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+  .progress-track {
+    background-color: #e2e8f0;
+    border-radius: 9999px;
+    height: 0.5rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .progress-fill {
+    background-color: #272757;
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.4s ease;
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+body { 
+  margin: 0; 
+  min-width: 320px; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+  header, footer, button, .fixed { display: none !important; }
+  body, main, section { background-color: white !important; color: black !important; }
+  h1, h2, h3, h4, h5, p, span { color: black !important; }
+  .grid > div { break-inside: avoid; page-break-inside: avoid; }
+}

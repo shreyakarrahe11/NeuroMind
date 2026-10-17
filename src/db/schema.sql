@@ -1,0 +1,11 @@
+-- NeuroMind canonical database schema
+-- Executable source of truth: backend/app/models/entities.py + Alembic.
+-- Run from backend/: alembic upgrade head
+--
+-- Tables:
+-- users, patient_profiles, doctor_profiles, doctor_patient_assignments,
+-- assessment_sessions, speech_assessments, speech_features,
+-- speech_transcriptions, memory_assessments, attention_assessments,
+-- lifestyle_assessments, model_runs, predictions, explanations,
+-- knowledge_documents, knowledge_chunks, reports, report_evidence,
+-- report_shares, doctor_reviews, notifications, audit_logs.
